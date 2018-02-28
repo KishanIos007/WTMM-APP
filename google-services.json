@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "612945089672",
+    "project_id": "firebase-wtmm"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612945089672:android:e248701e6ba386a8",
+        "android_client_info": {
+          "package_name": "com.android.WTMM"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612945089672-cie1l21b157mpb9t8m4lbeufkm3krn5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.WTMM",
+            "certificate_hash": "83a4f8546f34f2699050d3c8a252caad1dcb69e0"
+          }
+        },
+        {
+          "client_id": "612945089672-37mt2tl94ut9t7o3f65c9r2e5rve4g0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtAL08EXYdQmu08BwFPy3Gphs_sm1jbX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

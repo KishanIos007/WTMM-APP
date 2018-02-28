@@ -1,0 +1,332 @@
+<ion-header>
+  <ion-navbar>
+      <ion-toolbar>
+          <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+          <ion-title>Demo Project</ion-title>
+          
+          <ion-buttons end>
+              <button ion-button icon-only (click)="presentPopover($event)">
+                  <ion-icon name="more"></ion-icon>
+              </button>
+            </ion-buttons>
+        </ion-toolbar>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content padding>
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+                <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+        <ion-list>
+                <ion-item-sliding #slidingItem >
+                    <ion-card ion-item (click)="navigate('Way 1')">
+                                        <ion-item>
+                                            <ion-avatar class="avatar" item-start>
+                                                <img src="assets/imgs/user.png">
+                                            </ion-avatar>
+                                            <h2>MY ion-card</h2>
+                                            <p>Way 1</p>
+                                        </ion-item>
+                                </ion-card>
+                        <ion-item-options>
+                                <button ion-button color="favorite" (click)="addFavorite()">
+                                        Favorite
+                                </button>
+                                <button ion-button color="danger" (click)="removeFavorite()">
+                                        Remove
+                                </button>
+                            
+                    </ion-item-options>
+                </ion-item-sliding>
+                <ion-item-sliding>
+                        <ion-card ion-item (click)="navigate('Way 1')">
+                                            <ion-item>
+                                                <ion-avatar class="avatar" item-start>
+                                                    <img src="assets/imgs/user.png">
+                                                </ion-avatar>
+                                                <h2>MY ion-card</h2>
+                                                <p>Way 1</p>
+                                            </ion-item>
+                                    </ion-card>
+                            <ion-item-options>
+                                    <button ion-button color="favorite">
+                                            Favorite
+                                    </button>
+                                    <button ion-button color="danger">
+                                            Remove
+                                    </button>
+                                
+                        </ion-item-options>
+                </ion-item-sliding>
+                <ion-item-sliding>
+                        <ion-card ion-item (click)="navigate('Way 1')">
+                                            <ion-item>
+                                                <ion-avatar class="avatar" item-start>
+                                                    <img src="assets/imgs/user.png">
+                                                </ion-avatar>
+                                                <h2>MY ion-card</h2>
+                                                <p>Way 1</p>
+                                            </ion-item>
+                                    </ion-card>
+                            <ion-item-options>
+                                    <button ion-button color="favorite">
+                                            Favorite
+                                    </button>
+                                    <button ion-button color="danger">
+                                            Remove
+                                    </button>
+                                
+                        </ion-item-options>
+                </ion-item-sliding>
+            
+            <!-- <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card>
+            <ion-card (click)="navigate('Way 1')">
+                    <ion-item>
+                        <ion-avatar class="avatar"item-start>
+                            <img src="assets/imgs/user.png">
+                        </ion-avatar>
+                        <h2>Create Account In Fivverr</h2>
+                        <p>Way 1</p>
+                    </ion-item>
+            </ion-card> -->
+            
+
+
+        </ion-list>
+</ion-content>

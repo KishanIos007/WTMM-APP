@@ -1,0 +1,63 @@
+page-home {
+    // .scroll-content {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-direction: column;
+    // }
+    // .content {
+    //     background: linear-gradient(270deg, rgb(251, 173, 80), rgb(233, 89, 80), rgb(73, 102, 215));    
+    //     background-size: 1200% 100%;
+    //    -webkit-animation: MovingBackground 60s ease infinite;
+    //    -moz-animation: MovingBackground 60s ease infinite;
+    //    animation: MovingBackground 60s ease infinite;  
+    // }
+    // .item-ios,
+    // .item-md  {
+    //     background-color: color($colors, white-transparent, base);  
+    //     color:#fff;
+    // }
+
+    // // give the footer a white transparent border
+    // .footer-ios .toolbar-background-ios {
+    //     border-color: color($colors, white-transparent, base);  
+    // }
+    
+    // /** fixes **/      
+    // // if a list has a no-line directive, the last item still shows
+    // // a bottom border, so hide it
+    // .list-md[no-lines] .item-input:last-child {
+    //     border-width: 0;
+    // }    
+    // @-webkit-keyframes MovingBackground {
+    //     0% { background-position: 0% 50% }
+    //     50% { background-position: 100% 50% }
+    //     100% { background-position: 0% 50% }
+    // }
+
+    // @-moz-keyframes MovingBackground {
+    //     0% { background-position: 0% 50% }
+    //     50% { background-position: 100% 50% }
+    //     100% { background-position: 0% 50% }
+    // }
+
+    // @keyframes MovingBackground { 
+    //     0% { background-position: 0% 50% }
+    //     50% { background-position: 100% 50% }
+    //     100% { background-position: 0% 50% }
+    // }
+    .scroll-content{
+        padding: 0px !important;
+    }
+    h2{
+        margin-top: 0px !important;
+    }
+    .avatar img {
+        height: 60px;
+        width: 60px;
+    }
+    .toolbar {
+        padding: 0px !important;
+    }
+
+}
